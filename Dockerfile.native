@@ -1,0 +1,7 @@
+FROM alpine
+RUN apk --no-cache add libc6-compat
+ARG APP_FILE
+EXPOSE 8080
+
+COPY target/${APP_FILE} app
+CMD ["/app"]

@@ -42,5 +42,3 @@ jobs:
         with:
           push: true
           tags: ${{ github.repository }}:${{ github.ref_name }}
-          cache-from: type=registry,ref=${{ github.repository }}:${{ github.ref_name }}
-          cache-to: type=inline
